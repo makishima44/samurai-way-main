@@ -9,7 +9,7 @@
     "n c";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
-  gap: 20px;
+  gap: 10px;
 }
 
 .app-wrapper-content {
