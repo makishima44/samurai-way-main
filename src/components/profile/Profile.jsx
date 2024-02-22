@@ -2,11 +2,11 @@ import s from "./Profile.module.css";
 import { MyPosts } from "./myPosts/MyPosts";
 import { ProfileInfo } from "./profileInfo/ProfileInfo";
 
-export const Profile = () => {
+export const Profile = (props) => {
   return (
     <div>
       <ProfileInfo />
-      <MyPosts />
+      <MyPosts posts={props.state.posts} />
     </div>
   );
 };
