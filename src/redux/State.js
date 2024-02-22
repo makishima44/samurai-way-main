@@ -26,6 +26,24 @@ let state = {
       { id: 6, message: "Yo" },
     ],
   },
+  sitebar: {
+    friends: [
+      {
+        name: "Andrew",
+        avatar:
+          "https://papik.pro/uploads/posts/2023-03/1678233248_papik-pro-p-avatarki-malenkie-risunki-7.jpg",
+      },
+      {
+        name: "Sasha",
+        avatar:
+          "https://papik.pro/uploads/posts/2023-03/1678233248_papik-pro-p-avatarki-malenkie-risunki-7.jpg",
+      },
+      {
+        name: "Sveta",
+        avatar:
+          "https://papik.pro/uploads/posts/2023-03/1678233248_papik-pro-p-avatarki-malenkie-risunki-7.jpg",
+      },
+    ],
+  },
 };
-
 export default state;
