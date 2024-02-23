@@ -2,3 +2,9 @@
   display: flex;
   gap: 15px;
 }
+
+.navFriendsTitle {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}

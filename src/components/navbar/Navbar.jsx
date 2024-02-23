@@ -30,7 +30,7 @@ export const Navbar = (props) => {
           Settings
         </NavLink>
       </div>
-      <div>
+      <div className={s.friendsBlock}>
         <Friends friends={props.state.friends} />
       </div>
     </nav>

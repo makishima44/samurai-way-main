@@ -12,3 +12,7 @@
 .item a.activeLink {
   color: blueviolet;
 }
+
+.friendsBlock {
+  margin-top: 60px;
+}
