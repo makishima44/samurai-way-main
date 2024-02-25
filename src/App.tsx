@@ -8,8 +8,17 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { News } from "./components/news/News";
 import { Music } from "./components/music/Music";
 import { Settings } from "./components/settings/Settings";
+import state from "./redux/State";
 
-function App(props) {
+//------------------------------------------------------------------------------------------//
+
+type AppPropsType = {
+  state: typeof state;
+};
+
+//------------------------------------------------------------------------------------------//
+
+const App: React.FC<AppPropsType> = (props) => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -31,6 +40,6 @@ function App(props) {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

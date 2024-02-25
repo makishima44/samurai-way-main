@@ -1,7 +1,18 @@
+import React from "react";
 import s from "./Friends.module.css";
 import { Friend } from "./friend/Friend";
 
-export const Friends = (props) => {
+
+type FriendTypeProps = {
+  name: string;
+  avatar: string;
+};
+
+type FriendsArrayTypeProps = {
+  friends: Array<FriendTypeProps>;
+};
+
+export const Friends: React.FC<FriendsArrayTypeProps> = (props) => {
   let friendsElements = props.friends.map((f) => (
     <Friend name={f.name} avatar={f.avatar} />
   ));

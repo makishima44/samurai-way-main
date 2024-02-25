@@ -2,7 +2,19 @@ import s from "./Profile.module.css";
 import { MyPosts } from "./myPosts/MyPosts";
 import { ProfileInfo } from "./profileInfo/ProfileInfo";
 
-export const Profile = (props) => {
+type PostsType = {
+  id: number;
+  message: string;
+  likesCount: number;
+};
+
+type ProfilePropsType = {
+  state: {
+    posts: Array<PostsType>;
+  };
+};
+
+export const Profile: React.FC<ProfilePropsType> = (props) => {
   return (
     <div>
       <ProfileInfo />

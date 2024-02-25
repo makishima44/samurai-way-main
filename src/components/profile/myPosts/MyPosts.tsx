@@ -1,7 +1,17 @@
 import s from "./MyPosts.module.css";
 import { Post } from "./Post/Post";
 
-export const MyPosts = (props) => {
+type PostsType = {
+  id: number;
+  message: string;
+  likesCount: number;
+};
+
+type MyPostsPropsType = {
+  posts: Array<PostsType>;
+};
+
+export const MyPosts: React.FC<MyPostsPropsType> = (props) => {
   let postsElements = props.posts.map((p) => (
     <Post key={p.id} message={p.message} count={p.likesCount} />
   ));

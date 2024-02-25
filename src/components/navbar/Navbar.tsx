@@ -1,8 +1,23 @@
 import { NavLink } from "react-router-dom";
 import s from "./Navbar.module.css";
 import { Friends } from "./friends/Friends";
+import SitebarType from "./../../redux/State";
+//-----------------------------------------------------------------//
 
-export const Navbar = (props) => {
+type FriendsType = {
+  name: string;
+  avatar: string;
+};
+
+type NavbarPropsType = {
+  state: {
+    friends: Array<FriendsType>;
+  };
+};
+
+//-----------------------------------------------------------------//
+
+export const Navbar: React.FC<NavbarPropsType> = (props) => {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
