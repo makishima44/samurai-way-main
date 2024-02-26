@@ -1,19 +1,10 @@
 import s from "./MyPosts.module.css";
 import { Post } from "./Post/Post";
+import { ProfilePageType } from "./../../../redux/State";
 
-type PostsType = {
-  id: number;
-  message: string;
-  likesCount: number;
-};
-
-type MyPostsPropsType = {
-  posts: Array<PostsType>;
-};
-
-export const MyPosts: React.FC<MyPostsPropsType> = (props) => {
+export const MyPosts: React.FC<ProfilePageType> = (props) => {
   let postsElements = props.posts.map((p) => (
-    <Post key={p.id} message={p.message} count={p.likesCount} />
+    <Post id={p.id} message={p.message} likesCount={p.likesCount} />
   ));
   return (
     <div className={s.postsBlock}>

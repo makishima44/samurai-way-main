@@ -10,13 +10,10 @@ import { Music } from "./components/music/Music";
 import { Settings } from "./components/settings/Settings";
 import state from "./redux/State";
 
-//------------------------------------------------------------------------------------------//
 
 type AppPropsType = {
   state: typeof state;
 };
-
-//------------------------------------------------------------------------------------------//
 
 const App: React.FC<AppPropsType> = (props) => {
   return (

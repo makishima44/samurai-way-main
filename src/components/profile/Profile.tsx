@@ -1,12 +1,7 @@
 import s from "./Profile.module.css";
 import { MyPosts } from "./myPosts/MyPosts";
 import { ProfileInfo } from "./profileInfo/ProfileInfo";
-
-type PostsType = {
-  id: number;
-  message: string;
-  likesCount: number;
-};
+import { PostsType } from "./../../redux/State";
 
 type ProfilePropsType = {
   state: {

@@ -1,13 +1,8 @@
 import React from "react";
 import s from "./Friend.module.css";
-import state from "./../../../../redux/State";
+import { FriendsType } from "./../../../../redux/State";
 
-type FriendTypeProps = {
-  avatar: string;
-  name: string;
-};
-
-export const Friend: React.FC<FriendTypeProps> = (props) => {
+export const Friend: React.FC<FriendsType> = (props) => {
   return (
     <div className={s.friendContainer}>
       <img className={s.friendsAvatar} src={props.avatar} alt="" />

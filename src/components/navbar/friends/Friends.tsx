@@ -1,18 +1,9 @@
 import React from "react";
 import s from "./Friends.module.css";
 import { Friend } from "./friend/Friend";
+import { SitebarType } from "./../../../redux/State";
 
-
-type FriendTypeProps = {
-  name: string;
-  avatar: string;
-};
-
-type FriendsArrayTypeProps = {
-  friends: Array<FriendTypeProps>;
-};
-
-export const Friends: React.FC<FriendsArrayTypeProps> = (props) => {
+export const Friends: React.FC<SitebarType> = (props) => {
   let friendsElements = props.friends.map((f) => (
     <Friend name={f.name} avatar={f.avatar} />
   ));
